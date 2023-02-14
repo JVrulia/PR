@@ -27,11 +27,12 @@ def enter_number(n):
     return a, b
 
 def win(f, player):
+
     for i in range(3):
         if f[i][0] == f[i][1] == f[i][2] == player or \
-                f[0][1] == f[1][i] == f[2][i] == player or \
-                f[0][0] == f[1][1] == f[2][2] == player or \
-                f[0][2] == f[1][1] == [2][0] == player:
+           f[0][1] == f[1][i] == f[2][i] == player or \
+            f[0][0] == f[1][1] == f[2][2] == player or \
+           f[0][2] == f[1][1] == [2][0] == player:
             return True
 
 
