@@ -7,18 +7,18 @@ def print_board():
 
 def enter_number(n):
     while True:
-        coord = input('enter a coordinate: ').split()
+        coord = input('введите координаты через пробел: ').split()
         if len(coord) != 2:
-            print('enter 2 numbers')
+            print('введите 2 координаты')
             continue
         if not (coord[0].isdigit() and coord[1].isdigit()):
-            print('enter numbers')
+            print('введите числа')
             continue
         coord1 = list(map(int, coord))
         a = coord1[0]
         b = coord1[1]
         if not (0 <= a < 3 and 0 <= b < 3):
-            print('outside range')
+            print('координаты от 0 до 3')
             continue
         if n [a][b] != '-':
             print('клетка занята')
